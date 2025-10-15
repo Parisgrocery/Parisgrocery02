@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paris Grocery — Fresh, Friendly, Convenient</title>
+  <style>
+    :root{--accent:#c0392b;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;color:#222}
+    header{background:linear-gradient(135deg,#ffecec,#fff);padding:36px 18px;text-align:center;border-bottom:1px solid #eee}
+    h1{margin:0;font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:0.6px}
+    p.lead{margin:12px auto 0;max-width:800px;color:var(--muted)}
+    .container{max-width:1000px;margin:28px auto;padding:0 18px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);padding:20px;margin-bottom:18px}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+    .feature h3{margin:0 0 8px;font-size:1.05rem}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{border:1px solid #ddd;color:#333;background:#fff}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:0.95rem}
+    .payments{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .phone{font-weight:700;color:var(--accent)}
+    .store-info{text-align:center;margin-top:10px;color:#444;font-size:0.95rem}
+    .store-info div{margin:3px 0}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Paris Grocery</h1>
+    <p class="lead">Fresh groceries, friendly service, and the convenience you need — right in your neighborhood.</p>
+    <div class="store-info">
+      <div><strong>Phone:</strong> (416) 966-8584</div>
+      <div><strong>Address:</strong> 2 Crescent Road, Toronto ON M4W 1S9</div>
+      <div><strong>Hours:</strong> Mon–Fri: 7:00 AM – 8:00 PM · Sat–Sun: 9:00 AM – 8:00 PM</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About Our Store</h2>
+      <p>
+        At <strong>Paris Grocery</strong>, we take pride in offering a wide selection of fresh, high-quality groceries every day. From crisp fruits and vegetables to pantry staples and delicious ready-to-eat items, our shelves are stocked with products chosen for freshness and value.
+      </p>
+      <p>
+        We believe shopping should be simple and pleasant. Whether you visit us in person or place an order by phone, our friendly team will make sure your experience is quick and reliable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Convenient Ordering</h2>
+      <p>
+        Short on time? <strong>Call to place your order</strong> and we'll prepare it for pickup. Use the button below to call us from a mobile device, or simply note our number and ring in.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+14169668584">Call to Order: <span class="phone">(416) 966-8584</span></a>
+        <a class="btn btn-outline" href="#hours">Store Hours</a>
+        <a class="btn btn-outline" href="#location">Directions</a>
+      </div>
+    </section>
+
+    <section class="card" id="hours">
+      <h2>Store Hours</h2>
+      <p><strong>Monday – Friday:</strong> 7:00 AM – 8:00 PM</p>
+      <p><strong>Saturday & Sunday:</strong> 9:00 AM – 8:00 PM</p>
+    </section>
+
+    <section class="card" id="location">
+      <h2>Store Location</h2>
+      <p>Visit us at <strong>2 Crescent Road, Toronto ON M4W 1S9</strong>. We’re conveniently located near the Rosedale area with easy access and parking nearby.</p>
+      <iframe src="https://www.google.com/maps?q=2+Crescent+Road,+Toronto+ON+M4W+1S9&output=embed" width="100%" height="250" style="border-radius:10px;border:0;" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <section class="card">
+      <h2>Payment Options</h2>
+      <p>We make checkout easy by accepting multiple payment methods. Choose whichever works best for you:</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Cash</h3>
+          <p>Quick and familiar — pay at the counter when you pick up your order.</p>
+        </div>
+        <div class="feature">
+          <h3>Debit</h3>
+          <p>Tap or insert your debit card for fast, secure payment.</p>
+        </div>
+        <div class="feature">
+          <h3>Credit Card</h3>
+          <p>All major credit cards accepted for your convenience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Why Customers Love Us</h2>
+      <ul>
+        <li>Consistently fresh produce and well-stocked aisles.</li>
+        <li>Friendly staff who are happy to assist with phone orders.</li>
+        <li>Flexible payment options — cash, debit, or credit.</li>
+        <li>A neighborhood atmosphere with fair prices and fast service.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>Paris Grocery — Thank you for supporting your local store.</div>
+    <div style="margin-top:8px;color:#999;font-size:0.9rem">(416) 966-8584 · 2 Crescent Road, Toronto ON M4W 1S9 · Mon–Fri 7:00 AM–8:00 PM · Sat–Sun 9:00 AM–8:00 PM</div>
+  </footer>
+</body>
+</html>
